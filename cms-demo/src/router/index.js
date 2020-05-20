@@ -54,51 +54,52 @@ export const constantRouter = [{
 // 异步路由表
 export const asyncRouterMap = [
     // 用户角色权限管理
-    {
-        path: '/permission',
-        component: Layout,
-        redirect: '/permission/role',
-        meta: { title: '表格', icon: 'icon-yonghu' },
-        children: [
-            // {
-            //     path: 'role',
-            //     name: '角色管理',
-            //     component: () =>
-            //         import ('@/view/permission/role'),
-            //     meta: { title: '角色管理', icon: 'icon-yonghu' },
-            //     menu: 'upms:role:read',
-            //     hidden: false
-            // },
-            {
-                path: 'user',
-                name: '表格',
-                component: () =>
-                    import ('@/view/permission/user'),
-                meta: { title: '表格', icon: 'icon-yonghu' },
-                menu: 'upms:user:read',
-                hidden: false
-            },
-            {
-                path: 'userAdd',
-                name: '用户管理-添加用户',
-                component: () =>
-                    import ('@/view/permission/userAdd'),
-                meta: { title: '用户管理-添加用户', icon: 'icon-yonghu' },
-                menu: 'upms:user:read',
-                hidden: true
-            },
-            // {
-            //     path: 'menu',
-            //     name: '菜单管理',
-            //     component: () =>
-            //         import ('@/view/permission/menu'),
-            //     meta: { title: '菜单管理', icon: 'icon-yonghu' },
-            //     menu: 'upms:menu:read',
-            //     hidden: false
-            // }
-        ]
-    },
-    // 模块管理
+    // {
+    //     path: '/permission',
+    //     component: Layout,
+    //     redirect: '/permission/role',
+    //     meta: { title: '角色管理', icon: 'icon-yonghu' },
+    //     children: [
+    //         {
+    //             path: 'role',
+    //             name: '角色管理',
+    //             component: () =>
+    //                 import ('@/view/permission/role'),
+    //             meta: { title: '角色管理', icon: 'icon-yonghu' },
+    //             menu: 'upms:role:read',
+    //             hidden: false
+    //         },
+    //         {
+    //             path: 'user',
+    //             name: '表格',
+    //             component: () =>
+    //                 import ('@/view/permission/user'),
+    //             meta: { title: '表格', icon: 'icon-yonghu' },
+    //             menu: 'upms:user:read',
+    //             hidden: false
+    //         },
+    //         {
+    //             path: 'userAdd',
+    //             name: '用户管理-添加用户',
+    //             component: () =>
+    //                 import ('@/view/permission/userAdd'),
+    //             meta: { title: '用户管理-添加用户', icon: 'icon-yonghu' },
+    //             menu: 'upms:user:read',
+    //             hidden: true
+    //         },
+    //         {
+    //             path: 'menu',
+    //             name: '菜单管理',
+    //             component: () =>
+    //                 import ('@/view/permission/menu'),
+    //             meta: { title: '菜单管理', icon: 'icon-yonghu' },
+    //             menu: 'upms:menu:read',
+    //             hidden: false
+    //         }
+    //     ]
+    // },
+
+    // 富文本编辑器
     {
         path: '/mode',
         component: Layout,
@@ -106,7 +107,7 @@ export const asyncRouterMap = [
         meta: { title: '富文本编辑器', icon: 'icon-box' },
         children: [{
                 path: 'index',
-                name: '富文本编辑器',
+                name: 'quillEditor',
                 component: () =>
                     import ('@/view/richTextEditor/quillEditor'),
                 meta: { title: 'quillEditor', icon: 'icon-box' },
@@ -120,6 +121,32 @@ export const asyncRouterMap = [
                     import ('@/view/mode/log'),
                 meta: { title: '模块注册', icon: 'icon-box' },
                 menu: 'upms:log:read',
+                hidden: false
+            }
+        ]
+    },
+    // 表格
+    {
+        path: '/table',
+        component: Layout,
+        redirect: '/table/list',
+        meta: { title: '表格', icon: 'icon-table' },
+        children: [{
+                path: 'list',
+                name: '表格列表',
+                component: () =>
+                    import ('@/view/table/tableList'),
+                meta: { title: '表格列表', icon: 'icon-List' },
+                menu: 'upms:tableList:read',
+                hidden: false
+            },
+            {
+                path: 'upload',
+                name: '上传excel',
+                component: () =>
+                    import ('@/view/table/tableUpload'),
+                meta: { title: '上传excel', icon: 'icon-shangchuan' },
+                menu: 'upms:tableUpload:read',
                 hidden: false
             }
         ]

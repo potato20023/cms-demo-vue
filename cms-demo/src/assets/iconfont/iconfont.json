@@ -1,10 +1,45 @@
 {
   "id": "1779200",
-  "name": "工信平台",
+  "name": "cms-demo-vue",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
+    {
+      "icon_id": "68323",
+      "name": "table",
+      "font_class": "table",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "843907",
+      "name": "wan_map",
+      "font_class": "map",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "1703540",
+      "name": "上传",
+      "font_class": "shangchuan",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "8327014",
+      "name": "List",
+      "font_class": "List",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "10882661",
+      "name": "折线图",
+      "font_class": "zhexiantu",
+      "unicode": "e8b3",
+      "unicode_decimal": 59571
+    },
     {
       "icon_id": "11982657",
       "name": "Home, homepage, menu",

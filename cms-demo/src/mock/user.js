@@ -32,6 +32,11 @@ const userMap = {
             'upms:log:create',
             'upms:log:update',
             'upms:log:delete',
+            'upms:tableList:read',
+            'upms:tableList:create',
+            'upms:tableList:update',
+            'upms:tableList:delete',
+            'upms:tableUpload:read'
         ]
     },
     lucy: {
