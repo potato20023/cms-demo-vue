@@ -116,10 +116,10 @@ export const asyncRouterMap = [
             },
             {
                 path: 'log',
-                name: '模块注册',
+                name: 'wangeditor',
                 component: () =>
-                    import ('@/view/mode/log'),
-                meta: { title: '模块注册', icon: 'icon-box' },
+                    import ('@/view/richTextEditor/wangeditor'),
+                meta: { title: 'wangeditor', icon: 'icon-box' },
                 menu: 'upms:log:read',
                 hidden: false
             }
