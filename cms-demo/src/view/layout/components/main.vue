@@ -34,7 +34,7 @@ import appMain from '@/view/layout/components/app-main'
       z-index: 200;
     }
     .app-main{
-      min-width:1600px;
+      // min-width:1600px;
       margin-top:42px;
     }
   }

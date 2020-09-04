@@ -54,50 +54,50 @@ export const constantRouter = [{
 // 异步路由表
 export const asyncRouterMap = [
     // 用户角色权限管理
-    // {
-    //     path: '/permission',
-    //     component: Layout,
-    //     redirect: '/permission/role',
-    //     meta: { title: '角色管理', icon: 'icon-yonghu' },
-    //     children: [
-    //         {
-    //             path: 'role',
-    //             name: '角色管理',
-    //             component: () =>
-    //                 import ('@/view/permission/role'),
-    //             meta: { title: '角色管理', icon: 'icon-yonghu' },
-    //             menu: 'upms:role:read',
-    //             hidden: false
-    //         },
-    //         {
-    //             path: 'user',
-    //             name: '表格',
-    //             component: () =>
-    //                 import ('@/view/permission/user'),
-    //             meta: { title: '表格', icon: 'icon-yonghu' },
-    //             menu: 'upms:user:read',
-    //             hidden: false
-    //         },
-    //         {
-    //             path: 'userAdd',
-    //             name: '用户管理-添加用户',
-    //             component: () =>
-    //                 import ('@/view/permission/userAdd'),
-    //             meta: { title: '用户管理-添加用户', icon: 'icon-yonghu' },
-    //             menu: 'upms:user:read',
-    //             hidden: true
-    //         },
-    //         {
-    //             path: 'menu',
-    //             name: '菜单管理',
-    //             component: () =>
-    //                 import ('@/view/permission/menu'),
-    //             meta: { title: '菜单管理', icon: 'icon-yonghu' },
-    //             menu: 'upms:menu:read',
-    //             hidden: false
-    //         }
-    //     ]
-    // },
+    {
+        path: '/permission',
+        component: Layout,
+        redirect: '/permission/role',
+        meta: { title: '角色管理', icon: 'icon-yonghu' },
+        children: [
+            {
+                path: 'role',
+                name: '角色管理',
+                component: () =>
+                    import ('@/view/permission/role'),
+                meta: { title: '角色管理', icon: 'icon-yonghu' },
+                menu: 'upms:role:read',
+                hidden: false
+            },
+            {
+                path: 'user',
+                name: '表格',
+                component: () =>
+                    import ('@/view/permission/user'),
+                meta: { title: '表格', icon: 'icon-yonghu' },
+                menu: 'upms:user:read',
+                hidden: false
+            },
+            {
+                path: 'userAdd',
+                name: '用户管理-添加用户',
+                component: () =>
+                    import ('@/view/permission/userAdd'),
+                meta: { title: '用户管理-添加用户', icon: 'icon-yonghu' },
+                menu: 'upms:user:read',
+                hidden: true
+            },
+            {
+                path: 'menu',
+                name: '菜单管理',
+                component: () =>
+                    import ('@/view/permission/menu'),
+                meta: { title: '菜单管理', icon: 'icon-yonghu' },
+                menu: 'upms:menu:read',
+                hidden: false
+            }
+        ]
+    },
 
     // 富文本编辑器
     {
@@ -148,6 +148,31 @@ export const asyncRouterMap = [
                 meta: { title: '上传excel', icon: 'icon-shangchuan' },
                 menu: 'upms:tableUpload:read',
                 hidden: false
+            },
+            {
+                path:'headers',
+                name:'多级表头',
+                component:()=>import('@/view/table/tableHeaders'),
+                meta:{title:'多级表头',icon:''},
+                menu:'upms:tableHeaders:read',
+                hidden:false
+            }
+        ]
+    },
+    // echarts
+    {
+        path:'/echarts',
+        component:Layout,
+        redirect:'/echarts/map1',
+        meta:{title:'echarts',icon:''},
+        children:[
+            {
+                path:'map1',
+                name:'map1',
+                component:()=>import('@/view/echarts/map1'),
+                meta:{title:'map1',icon:''},
+                menu:'upms:map1:read',
+                hidden:false
             }
         ]
     }

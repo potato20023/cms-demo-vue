@@ -10,7 +10,7 @@ const userMap = {
         userName: 'admin',
         userId: 'admin',
         age: 10,
-        avatar: 'http://b-ssl.duitang.com/uploads/item/201704/10/20170410095843_SEvMy.thumb.700_0.jpeg',
+        avatar: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1598957951514&di=cc71e2cac70a7cdb2e6c979094c7ff63&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn19%2F0%2Fw400h400%2F20180910%2F3391-hiycyfw5413589.jpg',
         menuList: [
             'upms:role:read',
             'upms:role:create',
@@ -36,7 +36,12 @@ const userMap = {
             'upms:tableList:create',
             'upms:tableList:update',
             'upms:tableList:delete',
-            'upms:tableUpload:read'
+            'upms:tableUpload:read',
+            'upms:map1:read',
+            'upms:tableHeaders:read',
+            'upms:tableHeaders:create',
+            'upms:tableHeaders:update',
+            'upms:tableHeaders:delete'
         ]
     },
     lucy: {

@@ -64,7 +64,7 @@ const userList = {
                     from: '手动录入',
                     salesman: '李明',
                     createTime: '2018-09-25',
-                    state: 3,
+                    state: 2,
                     track: '15',
                     degree: 3
                 },
@@ -77,7 +77,7 @@ const userList = {
                     from: '手动录入',
                     salesman: '李明',
                     createTime: '2018-09-25',
-                    state: 4,
+                    state: 2,
                     track: '15',
                     degree: 4
                 },
@@ -90,7 +90,7 @@ const userList = {
                     from: '手动录入',
                     salesman: '李明',
                     createTime: '2018-09-25',
-                    state: 5,
+                    state: 2,
                     track: '15',
                     degree: 3
                 },
